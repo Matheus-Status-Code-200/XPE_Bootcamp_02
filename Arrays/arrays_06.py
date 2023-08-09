@@ -4,6 +4,7 @@ print('\nMétodo Shift:\n')
 print('Utilizando np.roll() para realizar um deslocamento circular (ou shift) nos elementos do array.')
 print('Isso significa que os elementos do array serão deslocados para a direita por 3 posições,')
 print('e os elementos que "caírem" fora do final serão trazidos de volta para o início.\n')
+print('Observe o deslocamento do número 1.')
 
 array = np.array([1, 2, 3, 4, 5])
 
