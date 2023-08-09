@@ -1,6 +1,7 @@
 from collections import deque
 
 print("\nFila com deque:")
+
 # Cria uma fila com três elementos.
 fila = deque(["Banana", "Maçã", "Pera"])
 print("Fila: ", fila)
