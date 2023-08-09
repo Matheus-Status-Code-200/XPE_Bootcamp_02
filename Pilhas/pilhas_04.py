@@ -3,7 +3,6 @@ class Nodo:
         self.dado = dado
         self.anterior = None
 
-
 class Pilha:
     
     def __init__(self):
