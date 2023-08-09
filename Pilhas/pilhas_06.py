@@ -13,6 +13,7 @@ print("\nTamanho da Fila:", tamanho)
 from time import sleep
 print("Removendo elementos da fila:")
 sleep(1)
+
 while not fila.empty():
     print(fila.get())
     sleep(0.8)
