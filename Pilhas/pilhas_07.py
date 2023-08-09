@@ -48,5 +48,5 @@ for i in range(5):
 while fila.primeiro is not None:
     fila.remove()
     print(f"Removendo elemento que está no começo da fila:", fila)
-    
+
 print('\n')
