@@ -1,0 +1,5 @@
+nums = set([1, 2, 2, 3, 3, 3])
+print('\nLimpando o conjunto:\n')
+print("Números: ", nums)
+nums.clear()
+print("Números: ", nums, '\n')
