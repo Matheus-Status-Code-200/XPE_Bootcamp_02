@@ -1,0 +1,5 @@
+nums = set([1, 2, 2, 3, 3, 3])
+print('\nRemovendo elementps com discard.\n')
+nums.discard(4) 
+nums.discard(2)
+print(nums,'\n')
