@@ -1,0 +1,35 @@
+print('\nResolvendo Colisão em Hash com sondagem:\n')
+hash_table = [None] * 10
+print(hash_table)
+
+def hashing_func(key):
+    return key % len(hash_table)
+
+print(hashing_func(10))
+print(hashing_func(20))
+print(hashing_func(25))
+
+def insert(hash_table, key, value):
+    hash_key = hashing_func(key)
+    
+    # Tratar colisões usando sondagem linear
+    if hash_table[hash_key] is None:
+        hash_table[hash_key] = value
+    else:
+        # Encontrar a próxima posição disponível usando sondagem linear
+        next_slot = (hash_key + 1) % len(hash_table)
+        while hash_table[next_slot] is not None:
+            next_slot = (next_slot + 1) % len(hash_table)
+        hash_table[next_slot] = value
+
+insert(hash_table, 10, 'Nepal')
+print(hash_table, '\n')
+
+insert(hash_table, 25, 'USA')
+print(hash_table, '\n')
+
+insert(hash_table, 20, 'India')
+print(hash_table, '\n')
+
+insert(hash_table, 35, 'BR')
+print(hash_table, '\n')
